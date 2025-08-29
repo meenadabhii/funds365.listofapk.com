@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -314,11 +315,11 @@
 </head>
 
 <body class="min-h-screen flex items-center justify-center py-8 px-4">
-
-
-    <!-- Header -->
-    <header class="text-center py-8 px-6 bg-gradient-to-r from-red-50 to-red-100">
-        <div class="container max-w-md mx-auto card bg-white">
+   
+   
+        <!-- Header -->
+        <header class="text-center py-8 px-6 bg-gradient-to-r from-red-50 to-red-100">
+             <div class="container max-w-md mx-auto card bg-white">
             <div class="floating-element">
                 <div class="feature-icon mx-auto">
                     <i class="fas fa-piggy-bank text-3xl text-red-500"></i>
@@ -327,136 +328,131 @@
             <h1 class="text-4xl font-bold text-red-600 mt-4">funds365<br><span
                     class="text-gray-800">listofapk.com</span></h1>
             <p class="text-gray-600 mt-2">Your journey to financial freedom starts here</p>
-        </div>
-    </header>
-    <div id="banner-ad" class="ads-box" style="min-height: 250px;">
-        <div id="ad-slot-1" class="ad-container" style="display: block !important;"></div>
-    </div>
-    <!-- Main Content -->
-    <main class="px-6 py-8">
-        <div style="height: 300px; width:400px ">
-            <div id="ad-slot-1" class="ad-container" style="display: block !important;"></div>
-        </div>
-        <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-gray-800">Welcome to FinanceHub</h2>
-            <p class="text-gray-600 mt-4">We provide expert financial guidance tailored to your needs. Select your
-                age group to continue.</p>
-        </div>
+            
+        </header>
+         <div id="banner-ad" class="ads-box" style="min-height: 250px;">
+                <div id="ad-slot-1" class="ad-container" style="display: block !important;"></div>
+            </div>
+        <!-- Main Content -->
+        <main class="px-6 py-8">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">Welcome to FinanceHub</h2>
+                <p class="text-gray-600 mt-4">We provide expert financial guidance tailored to your needs. Select your
+                    age group to continue.</p>
+            </div>
 
-        <!-- ads  -->
+            <!-- ads  -->
+           
 
+            <!-- Age Selection Buttons -->
+            <div class="flex flex-col space-y-6 mb-10">
+                <a href="fund.html" class="btn-primary pulse text-lg py-5 text-center">
+                    <i class="fas fa-user-check mr-2"></i> Age 18+
+                </a>
+                <a href="finance.html" class="btn-secondary text-lg py-5 text-center">
+                    <i class="fas fa-user-graduate mr-2"></i> Under 18
+                </a>
+            </div>
 
-        <!-- Age Selection Buttons -->
-        <div class="flex flex-col space-y-6 mb-10">
-            <a href="fund.html" class="btn-primary pulse text-lg py-5 text-center">
-                <i class="fas fa-user-check mr-2"></i> Age 18+
-            </a>
-            <a href="finance.html" class="btn-secondary text-lg py-5 text-center">
-                <i class="fas fa-user-graduate mr-2"></i> Under 18
-            </a>
-        </div>
+            <!-- Expandable Content Section -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Why Choose FinanceHub?</h3>
 
-        <!-- Expandable Content Section -->
-        <div class="mb-8">
-            <h3 class="text-xl font-semibold text-gray-800 mb-4">Why Choose FinanceHub?</h3>
+                <div class="mb-4 border border-gray-200 rounded-xl p-4">
+                    <button class="flex justify-between items-center w-full text-left font-medium text-red-600"
+                        onclick="toggleContent('content1')">
+                        <span>Expert Financial Guidance</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="content1" class="expandable-content mt-3 text-gray-600">
+                        <p>Our team of certified financial experts with over 15 years of experience will help you
+                            navigate the complex world of personal finance, investments, and wealth management.</p>
+                    </div>
+                </div>
 
-            <div class="mb-4 border border-gray-200 rounded-xl p-4">
-                <button class="flex justify-between items-center w-full text-left font-medium text-red-600"
-                    onclick="toggleContent('content1')">
-                    <span>Expert Financial Guidance</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div id="content1" class="expandable-content mt-3 text-gray-600">
-                    <p>Our team of certified financial experts with over 15 years of experience will help you
-                        navigate the complex world of personal finance, investments, and wealth management.</p>
+                <div class="mb-4 border border-gray-200 rounded-xl p-4">
+                    <button class="flex justify-between items-center w-full text-left font-medium text-red-600"
+                        onclick="toggleContent('content2')">
+                        <span>Tailored Investment Strategies</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="content2" class="expandable-content mt-3 text-gray-600">
+                        <p>We create personalized investment portfolios based on your financial goals, risk tolerance,
+                            and time horizon. Whether you're saving for retirement or a down payment, we have strategies
+                            for you.</p>
+                    </div>
+                </div>
+
+                <div class="mb-4 border border-gray-200 rounded-xl p-4">
+                    <button class="flex justify-between items-center w-full text-left font-medium text-red-600"
+                        onclick="toggleContent('content3')">
+                        <span>Comprehensive Financial Planning</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="content3" class="expandable-content mt-3 text-gray-600">
+                        <p>From budgeting and debt management to insurance and estate planning, we provide holistic
+                            financial solutions to secure your future and protect your assets.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="mb-4 border border-gray-200 rounded-xl p-4">
-                <button class="flex justify-between items-center w-full text-left font-medium text-red-600"
-                    onclick="toggleContent('content2')">
-                    <span>Tailored Investment Strategies</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div id="content2" class="expandable-content mt-3 text-gray-600">
-                    <p>We create personalized investment portfolios based on your financial goals, risk tolerance,
-                        and time horizon. Whether you're saving for retirement or a down payment, we have strategies
-                        for you.</p>
+            <!-- Statistics Section -->
+            <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="bg-red-50 p-4 rounded-xl text-center">
+                    <p class="text-3xl font-bold text-red-600">15+</p>
+                    <p class="text-sm text-gray-600">Years Experience</p>
+                </div>
+                <div class="bg-red-50 p-4 rounded-xl text-center">
+                    <p class="text-3xl font-bold text-red-600">10K+</p>
+                    <p class="text-sm text-gray-600">Clients Served</p>
+                </div>
+                <div class="bg-red-50 p-4 rounded-xl text-center">
+                    <p class="text-3xl font-bold text-red-600">$500M+</p>
+                    <p class="text-sm text-gray-600">Assets Managed</p>
+                </div>
+                <div class="bg-red-50 p-4 rounded-xl text-center">
+                    <p class="text-3xl font-bold text-red-600">98%</p>
+                    <p class="text-sm text-gray-600">Client Satisfaction</p>
                 </div>
             </div>
 
-            <div class="mb-4 border border-gray-200 rounded-xl p-4">
-                <button class="flex justify-between items-center w-full text-left font-medium text-red-600"
-                    onclick="toggleContent('content3')">
-                    <span>Comprehensive Financial Planning</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div id="content3" class="expandable-content mt-3 text-gray-600">
-                    <p>From budgeting and debt management to insurance and estate planning, we provide holistic
-                        financial solutions to secure your future and protect your assets.</p>
-                </div>
+
+             <!-- ads units  -->
+
+            <div id="banner-ad" class="ads-box" style="min-height: 250px;">
+                <div id="ad-slot-2" class="ad-container" style="display: block !important;"></div>
             </div>
-        </div>
-
-        <!-- Statistics Section -->
-        <div class="grid grid-cols-2 gap-4 mb-8">
-            <div class="bg-red-50 p-4 rounded-xl text-center">
-                <p class="text-3xl font-bold text-red-600">15+</p>
-                <p class="text-sm text-gray-600">Years Experience</p>
-            </div>
-            <div class="bg-red-50 p-4 rounded-xl text-center">
-                <p class="text-3xl font-bold text-red-600">10K+</p>
-                <p class="text-sm text-gray-600">Clients Served</p>
-            </div>
-            <div class="bg-red-50 p-4 rounded-xl text-center">
-                <p class="text-3xl font-bold text-red-600">$500M+</p>
-                <p class="text-sm text-gray-600">Assets Managed</p>
-            </div>
-            <div class="bg-red-50 p-4 rounded-xl text-center">
-                <p class="text-3xl font-bold text-red-600">98%</p>
-                <p class="text-sm text-gray-600">Client Satisfaction</p>
-            </div>
-        </div>
 
 
-        <!-- ads units  -->
-
-        <div id="banner-ad" class="ads-box" style="min-height: 250px;">
-            <div id="ad-slot-2" class="ad-container" style="display: block !important;"></div>
-        </div>
-
-
-        <!-- Testimonials -->
-        <div class="mb-8">
-            <h3 class="text-xl font-semibold text-gray-800 mb-4">What Our Clients Say</h3>
-            <div class="bg-gray-50 p-6 rounded-xl">
-                <div class="flex items-start mb-4">
-                    <div class="mr-4">
-                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-                            <i class="fas fa-user text-red-500"></i>
+            <!-- Testimonials -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">What Our Clients Say</h3>
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-start mb-4">
+                        <div class="mr-4">
+                            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-red-500"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <p class="text-sm text-red-500">Business Owner</p>
                         </div>
                     </div>
-                    <div>
-                        <h4 class="font-semibold">Sarah Johnson</h4>
-                        <p class="text-sm text-red-500">Business Owner</p>
-                    </div>
+                    <p class="text-gray-600">"FinanceHub transformed my approach to money management. Their strategies
+                        helped me grow my business revenue by 40% in just one year."</p>
                 </div>
-                <p class="text-gray-600">"FinanceHub transformed my approach to money management. Their strategies
-                    helped me grow my business revenue by 40% in just one year."</p>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <!-- Footer -->
-    <footer class="text-center py-6 px-6 bg-gray-50 text-gray-600 text-sm">
-        <p>© 2023 FinanceHub. All rights reserved.</p>
-        <p class="mt-2">Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                data-cfemail="d2bbbcb4bd92b4bbbcb3bcb1b7baa7b0fcb1bdbf">[email&#160;protected]</a> | (800) 123-4567</p>
-    </footer>
+        <!-- Footer -->
+        <footer class="text-center py-6 px-6 bg-gray-50 text-gray-600 text-sm">
+            <p>© 2023 FinanceHub. All rights reserved.</p>
+            <p class="mt-2">Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d2bbbcb4bd92b4bbbcb3bcb1b7baa7b0fcb1bdbf">[email&#160;protected]</a> | (800) 123-4567</p>
+        </footer>
     </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Function to toggle expandable content
         function toggleContent(id) {
             const content = document.getElementById(id);
@@ -482,7 +478,7 @@
 
 
 
-    <!-- ads  -->
+  <!-- ads  -->
     <div id="ad-anchor-slot"></div>
 
     <script>
@@ -530,7 +526,7 @@
         });
     </script>
 
-
+  
     <script>
         (function () {
             document.addEventListener("DOMContentLoaded", function () {
